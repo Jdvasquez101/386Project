@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="FullScreen" style="flex-grow: 1; min-width: 100%; min-height: 100%; align-items: auto; flex-direction: column; align-self: center; justify-content: space-around; width: 100%; height: 100%; flex-wrap: nowrap;">
+        <ui:VisualElement name="RedPanel" style="flex-grow: 0; width: 50%; height: 50%; flex-shrink: 1; align-self: center; justify-content: center; align-items: center; flex-direction: column; flex-basis: auto; background-color: rgb(255, 0, 0);">
+            <ui:VisualElement style="flex-grow: 0; align-items: center; flex-direction: row;">
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RBtn1" style="align-items: center; justify-content: center; align-self: center;" />
+                <ui:Button text="Button  2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RBtn2" style="align-self: center;" />
+            </ui:VisualElement>
+            <ui:Toggle label="Toggle" name="RedToggle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BluePanel" style="flex-grow: 0; width: 50%; height: 50%; flex-shrink: 1; align-self: flex-end; justify-content: space-around; align-items: center; flex-direction: row; flex-basis: auto; background-color: rgb(0, 9, 255);">
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BBtn1" />
+            <ui:Button text="Button  2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BBtn2" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TopLevelButton" style="position: absolute;" />
+</ui:UXML>
