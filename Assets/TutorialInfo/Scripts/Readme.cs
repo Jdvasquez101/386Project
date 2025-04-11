@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Readme", menuName = "Readme")]
 public class Readme : ScriptableObject
 {
     public Texture2D icon;
@@ -11,6 +12,7 @@ public class Readme : ScriptableObject
     [Serializable]
     public class Section
     {
+        [TextArea(3, 10)]
         public string heading, text, linkText, url;
     }
 }
