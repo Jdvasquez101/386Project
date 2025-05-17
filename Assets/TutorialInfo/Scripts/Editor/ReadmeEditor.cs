@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// File provided by Unity Technologies with some modifications applied.
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -6,6 +7,9 @@ using System;
 using System.IO;
 using System.Reflection;
 
+//Note: There is no way to modify the Readme content in the default inspector. 
+//You must modify the asset using the debug inspector, 
+//by clicking the ... button in the top right corner of the inspector and selecting Debug Inspector.
 [CustomEditor(typeof(Readme))]
 [InitializeOnLoad]
 public class ReadmeEditor : Editor

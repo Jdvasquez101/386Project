@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme - 01
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: 
+  sections:
+  - heading: GameObjects
+    text: 'The hierarchy tree shows objects. If an object is selected either in the
+      scene or in the hierarchy tree, the inspector will show their components. Objects
+      can hold multiple components, which each define an element of their behavior.
+      Examine the objects and their components. '
+    linkText: GameObject reference
+    url: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html
+  - heading: Inspector
+    text: Components have values exposed in the Inspector. These values can be changed
+      and saved, creating the initial state for the scene which can be saved.<br>Some
+      helpful shortcuts:<br>Q - Pan<br>W - Translate (move)<br>E - Rotate<br>R -
+      Scale<br>T - Box Transform (move + change size via corners/edges)<br>Y - Universal
+      Transform<br><br>You can alternate between transforming an object via their
+      local scale and their global scale (most visible if you toggle it on the slanted
+      piece of ground).<br><br> A slightly more advanced topic is the concept of
+      creating a custom inspector interface for objects, with the Readme object (defined
+      in the TutorialInfo folder) being a good example of this.
+    linkText: Inspector Reference
+    url: https://docs.unity3d.com/Manual/UsingTheInspector.html
+  - heading: Additional Inspector Reference
+    text: This overview is for a previous version of Unity, but is more helpful from
+      a beginner's perspective.
+    linkText: Alternative Inspector Reference - Old Version
+    url: https://docs.unity3d.com/510/Documentation/Manual/Inspector.html
+  - heading: Render Order
+    text: Sorting Layer and Order in Layer can be used to ensure the desired drawing
+      order, so that background objects are drawn first, appearing "behind" objects
+      in the foreground which are drawn later. Try modifying the rendering settings
+      so that the hexagon appears in front of the static ground objects.<br><br>Please
+      note that Cameras come with near and far culling distances, so if a camera
+      occupies the same z position as an object, it likely won't render.
+    linkText: 2d Renderer Sorting
+    url: https://docs.unity3d.com/Manual/2d-renderer-sorting.html
+  - heading: Play Mode
+    text: By hitting the play arrow at the top, you will begin simulating your game.
+      Changes made while play mode is active will not be changed - Whether they change
+      as a result of gameplay or inspector editing. This can be a frustrating cause
+      of confusion! Set a value in Preferences > Colors > Play Mode Tint to gently
+      remind yourself if play mode is active. The only exception for this behavior
+      is scriptableobjects, which will be examined in more detail in a later example.
+    linkText: 
+    url: 
+  - heading: Layers
+    text: Objects can be assigned layers in the inspector, which can be used to define
+      their interactions with each other. In Project Settings > Physics 2d, you can
+      see and modify the layer collision matrix. Objects can individually include
+      or exclude layers for collisions. Layers have names, but are internally evaluated
+      via their layer index. The dynamic objects are given the Units layer, and the
+      red hexagon is given the Background layer, observe what happens if these layers
+      are changed.
+    linkText: Layers Reference
+    url: https://docs.unity3d.com/Manual/Layers.html
+  - heading: Physics Interactions
+    text: 'Physics interactions require two components on relevant objects: A collider,
+      and a rigidbody.<br>Dynamic rigidbodies are subject to force from collisions
+      and gravity.<br>Static rigidbodies are intended to remain motionless, and are
+      unaffected by forces or collisions.<br>Kinematic rigidbodies are intended to
+      be moved only by scripting, and not physics forces.<br><br>Colliders can also
+      be used without a rigidbody via the "Is Trigger" boolean. While collisions
+      with physics objects will trigger the OnCollisionEnter2D method, a physics
+      object entering a trigger collider will initiate the OnTriggerEnter2D method'
+    linkText: RigidBody2D Reference
+    url: https://docs.unity3d.com/Manual/2d-physics/rigidbody/rigidbody-2d-landing.html
+  - heading: Physics Details
+    text: Physics Objects can have materials applied that determine how much friction
+      and bounciness is applied upon collisions. Friction will not be applied to
+      circle colliders (idealized rolling does not incur friction), but the linear
+      damping value on the rigidbody will have an impact. Tweak values and experiment
+      with lightweight scenes to get an idea of what works and what feels good or
+      "right".<br><br>Rigidbodies will make use of colliders in their children, unless
+      their children have rigidbodies of their own.
+    linkText: 
+    url: 
+  loadedLayout: 0

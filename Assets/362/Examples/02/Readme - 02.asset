@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme - 02
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: 
+  sections:
+  - heading: Version Control
+    text: Although Unity offers a Version Control system called PlasticSCM, I still
+      recommend git. Use of a proper gitignore is essential to avoid excessive tracking
+      of files. .meta files are important to retain, as they are used to maintain
+      references within scenes and other purposes.
+    linkText: git download
+    url: https://git-scm.com/downloads
+  - heading: Monobehaviours
+    text: Scripts in Unity are attached to GameObjects by inheriting the Monobehaviour
+      class. This allows access to numerous methods that are accessed through regular
+      gameplay events, such as Awake, Start, Update, and OnCollisionEnter2D<br><br>Fields
+      will be exposed in the Unity Editor's Inspector if they are:<br>1. Public<br>2.
+      Prefaced with the [SerializeField] tag<br>3. Are a property with the [field:SerializeField]
+      tag<br><br>Awake is where objects should set their references and perform internal
+      setup logic, while Start is where they should perform code that depends on
+      other objects to be properly initialized. Update runs on every frame, while
+      FixedUpdate runs every physics update.
+    linkText: Monobehaviours Reference
+    url: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html
+  - heading: Input System
+    text: The current recommended way to access inputs is Unity's Input System package,
+      which provides abstracted controls that allow developers to handle multiple
+      input methods (mouse+keyboard, gamepad) with consistent means. There are numerous
+      ways to use these inputs.
+    linkText: Input System Reference
+    url: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/index.html
+  - heading: Player Input
+    text: An easy Unity provided way to implement behaviors reacting to Input System
+      inputs. Though there are multiple ways for this to be utilized, perhaps the
+      simplest involves the PlayerInput component sending messages to all attached
+      scripts based on the name of the inputs.<br>For example, the Move input will
+      send a message with input information to all scripts implementing the function<br>public
+      void OnMove(InputAction)
+    linkText: Workflow - Player Input
+    url: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/Workflow-PlayerInput.html
+  - heading: Serialization
+    text: Serialization refers to the conversion of objects in memory to a text string
+      that can be parsed, or deserialized, back into an object. This is a very helpful,
+      if not necessary, element of saving and loading. Unity offers a json utility
+      that is capable of serializing a C# object and creating/modifying an object
+      based on the produced JSON, effectively enabling saving and loading data. This
+      can be used with playerprefs or direct filesystem access via the C# System.IO
+      namespace, or any alternative interface providing access to persistent storage.
+    linkText: JsonUtility Reference
+    url: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/JsonUtility.html
+  - heading: PlayerPrefs
+    text: PlayerPrefs are a simple means of saving persistent data. They store data
+      of a primative type (string, int, or float). If you want to save other types
+      of data, you probably want to convert it to/from a string. You can see an example
+      of this with a Vector3 in PersistLocation. This can also be performed on more
+      complicated objects. Alternatively, you can create functions that convert objects
+      to strings or assign values based off of the contents of a string.<br><br>When
+      saved strings get too long for PlayerPrefs, or you want more control over how/where
+      files are stored, you may wish to directly interact with the System.IO namespace.
+    linkText: PlayerPrefs Reference
+    url: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/PlayerPrefs.html
+  loadedLayout: 0

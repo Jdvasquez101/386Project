@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
   title: 
-  sections: []
-  loadedLayout: 0
+  sections:
+  - heading: 01
+    text: Basic Unity Introduction, including<br>Scenes, Scripts, and GameObjects
+    linkText: 
+    url: 
+  loadedLayout: 1
