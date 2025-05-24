@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Readme - 01
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  title: 
+  title: Readme - 01
   sections:
   - heading: GameObjects
     text: 'The hierarchy tree shows objects. If an object is selected either in the

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme - 03
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Readme - 03
+  sections:
+  - heading: Managers
+    text: While you can use references, or find objects by tag or component, it may
+      sometimes be easier to find using the (controversial) Singleton pattern. This
+      is achieved by creating a public static reference to the class, and assigning
+      it to the object upon creation. This allows any object in the scene to access
+      both static and nonstatic information from the class with ease.<br>Many facets
+      of your application may benefit from having a single manager coordinating larger
+      complex commands, like destroying all enemies. This can be made even more consistent
+      by creating it upon application start and setting donotdestroyonload so it
+      persists across scenes.
+    linkText: 
+    url: 
+  - heading: Creating Objects
+    text: Using the Instantiate command, you can create a GameObject, which will
+      be returned from the function call so that it can be modified immediately following
+      creation. This is a great use of Prefabs, so you can carefully construct the
+      object you want to be instantiated so that it has all of the components and
+      values set up ahead of time.
+    linkText: 
+    url: 
+  - heading: Destroying Objects
+    text: Objects OR components can be disabled or destroyed. This will also activate
+      the OnDestroy monobehaviour call, which can be used for any cleanup your object
+      may require.
+    linkText: 
+    url: 
+  - heading: Object Pooling
+    text: The creation and destruction of objects is a resource intensive operation,
+      and one effective optimization is to pool these objects, meaning that they
+      are reused by disabling and re-enabling them, instead of creating and destroying
+      them. Unity provides an ObjectPool class to help you manage pooled objects.
+    linkText: 
+    url: 
+  - heading: UI - Canvas System
+    text: UI objects using the canvas system are children of a Canvas object. Canvas
+      objects can be in world space or a screen overlay (default) - The screen overlay
+      system uses a separate coordinate system from gameobjects, and you must consider
+      UI objects within it relative to their canvas instead of relative to their
+      world space position.
+    linkText: 
+    url: 
+  loadedLayout: 0

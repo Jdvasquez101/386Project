@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Readme - 02
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  title: 
+  title: Readme - 02
   sections:
   - heading: Version Control
     text: Although Unity offers a Version Control system called PlasticSCM, I still

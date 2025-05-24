@@ -30,7 +30,7 @@ public class PlayerController03 : MonoBehaviour
     transform.position += new Vector3(
       PlayerInputManager.Instance.Movement.x,
       PlayerInputManager.Instance.Movement.y,
-      0) * Time.deltaTime * _moveSpeed * Time.timeScale;
+      0) * Time.deltaTime * _moveSpeed;
     if (PlayerInputManager.Instance.PausePressed && !_isDead)
     {
       GameManager03.Instance.PauseGame();

@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
         _moveSpeedMultiplier += Time.deltaTime * 0.5f;
         transform.position = 
             Vector2.MoveTowards(transform.position, _player.position, 
-            Time.deltaTime * Time.timeScale * _moveSpeed * _moveSpeedMultiplier);
+            Time.deltaTime * _moveSpeed * _moveSpeedMultiplier);
     }
 
     void OnDestroy()

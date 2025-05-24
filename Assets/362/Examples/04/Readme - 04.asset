@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme - 04
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Readme - 04
+  sections:
+  - heading: Scene Transitions
+    text: Games can transition to different scenes at runtime. In order for the scene
+      to be loaded, it must be included in Build Profiles > Scene List.<br>This involves<br>1.
+      Unloading the current scene, and loading the next scene. This is the default
+      behavior when using LoadScene.<br>2. A new scene can be added alongside the
+      current scene. There is a second default argument that can be provided "LoadSceneMode.Additive"
+      to use this behavior.<br><br>LoadSceneAsync and UnloadSceneAsync can also be
+      used to load/unload scenes in the background while gameplay continues.
+    linkText: Scene Manager
+    url: https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html
+  - heading: Tilemaps
+    text: Tilemaps allow for uniform placement of "tile" prefabs that can be easily
+      edited, and treated as a singular object. Tilemaps can also be given colliders,
+      and multiple tilemaps can exist within a single grid to allow for multiple
+      layers or conditions. If accessing the linked reference, please also note the
+      references for creating tiles and tile palettes, which are contained within
+      the TileMap folder in this example.
+    linkText: Working with Tilemaps
+    url: https://docs.unity3d.com/Manual/tilemaps/work-with-tilemaps/work-with-tilemaps-landing.html
+  - heading: UI - Canvas System
+    text: UI objects using the canvas system are children of a Canvas object. Canvas
+      objects can be in world space or a screen overlay (default) - The screen overlay
+      system uses a separate coordinate system from gameobjects, and you must consider
+      UI objects within it relative to their canvas instead of relative to their
+      world space position.
+    linkText: Unity UI
+    url: https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/index.html
+  - heading: Considerations for 3d Development
+    text: While we are largely focus on 2d development within this class, many of
+      the same principles can be utilized for 3d development. A lot of the math,
+      notably rotation and translating controls to 3d coordinates, is a little trickier.
+    linkText: Creating a 3d Game
+    url: https://docs.unity3d.com/Manual/Quickstart3DCreate.html
+  - heading: Character Controller Component
+    text: The Character Controller component allows for simple, non-physics based
+      3d motion.
+    linkText: Character Controller Reference
+    url: https://docs.unity3d.com/560/Documentation/Manual/class-CharacterController.html
+  - heading: Materials
+    text: When creating 3d objects, generating and/or applying an appropriate material
+      is necessary. If you create a material, you will see a number of options for
+      use within the URP - including 2d and 3d varieties. Unity comes with a number
+      of flexible shaders ready for use, and can be used to make surfaces appear
+      shiny, or lit, or apply various distortions to the provided textures. You may
+      wish to create and apply your own texture to the 3d scene in this example.
+    linkText: Materials, Shaders, and Textures
+    url: https://docs.unity3d.com/560/Documentation/Manual/Shaders.html
+  - heading: Shaders
+    text: These are shaders, which are low level scripts and allow for a great level
+      of customization if you are willing to delve into their implementation - which
+      is not a simple undertaking. You can get a starting look at provided shaders
+      by selecting the shader asset from a material - two of which are provided in
+      this example.
+    linkText: Shaders Overview
+    url: https://docs.unity3d.com/560/Documentation/Manual/ShadersOverview.html
+  loadedLayout: 0
