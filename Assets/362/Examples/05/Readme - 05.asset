@@ -13,9 +13,48 @@ MonoBehaviour:
   m_Name: Readme - 05
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  title: 
+  title: Readme - 05
   sections:
-  - heading: License
+  - heading: DontDestroy
+    text: Calling DontDestroyOnLoad(obj) will ensure obj does not get unloaded when
+      changing scenes, which can be useful if you have any logic that benefits from
+      persisting across scenes. One simple example of this is to allow audio to play
+      as the user transitions between scenes.
+    linkText: DontDestroyOnLoad Reference
+    url: https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html
+  - heading: AudioSource
+    text: Sound files can be played through an AudioSource, which will be listened
+      to through AudioListeners (usually attached to Cameras). Audio sources can
+      have a resource loaded in, or have methods available that allow other objects
+      to play any audio resource they provide. Audio Sources can be assigned to an
+      Audio Mixer group for fine tuned volume and effect control. It is possible
+      to tweak distance based settings, allowing functionality like proximity-based
+      audio, volume falloff, and the doppler effect.
+    linkText: AudioSource Reference
+    url: https://docs.unity3d.com/Manual/AudioSource-reference.html
+  - heading: AudioMixer
+    text: AudioMixers allow for a tree of AudioMixerGroups, which influence the volume
+      and effects applied to AudioSources that belong to said groups. This is an
+      easy way to control various volumes in a single, centralized location, as well
+      as applying effects that modify sounds. You can expose variables in the audiomixer
+      to be modifiable within code.
+    linkText: Audio Mixer Reference
+    url: https://docs.unity3d.com/Manual/AudioMixer.html
+  - heading: ScriptableObjects
+    text: ScriptableObjects are classes that define objects used to hold data. ScriptableObjects
+      can be created within the Project Browser, and these assets can be referenced
+      within code. While values assigned to them will persist within the Unity Editor,
+      even if they are changed within play mode, this behavior is NOT exhibited during
+      gameplay in a game build. It is possible to create functions within ScriptableObjects,
+      though they do not have access to Monobehaviour lifecycle functions. This example's
+      ScriptableObject only has one instance created, and is largely used to hold
+      saved/loaded settings values, but they can be used in a large variety of contexts
+      (weapon values used by a unified class, character stats used by a unified controller,
+      etc). Their use differs from both GameObjects and pure C# structs or classes,
+      so be sure to check the reference when you decide to use them.
+    linkText: Scriptable Object Reference
+    url: https://docs.unity3d.com/Manual/class-ScriptableObject.html
+  - heading: Music License
     text: 'Song: Escape<br>Composer: Sappheiros<br>Website: https://open.spotify.com/artist/5ZVHXQZAIn9WJXvy6qn9K0<br>License:
       Creative Commons (BY 3.0) https://creativecommons.org/licenses/by/3.0/'
     linkText: CC 3.0 License
