@@ -70,4 +70,13 @@ MonoBehaviour:
       this example.
     linkText: Shaders Overview
     url: https://docs.unity3d.com/560/Documentation/Manual/ShadersOverview.html
+  - heading: Lighting
+    text: When you add any lighting to the scene, it will be calculated throughout.
+      There are a number of light sources, and 2d lighting components are separated
+      from 3d lighting components. Shadowcasters can be attached to objects that
+      should obstruct the casting of light, separately from physics colliders. Layer
+      data can also be used, so you can have invisible objects cast shadows or have
+      collidable and/or visible objects that don't cast shadows.
+    linkText: Introduction to Lighting
+    url: https://docs.unity3d.com/Manual/LightingInUnity.html
   loadedLayout: 0

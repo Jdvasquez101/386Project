@@ -18,8 +18,7 @@ public class PlayerController03 : MonoBehaviour
     _enemyManager = FindFirstObjectByType<EnemyManager>();
     if (!_enemyManager)
     {
-      Debug.LogError("EnemyManager not found");
-      this.enabled = false;
+      Debug.Log("EnemyManager not found");
     }
     StartGame();
   }
