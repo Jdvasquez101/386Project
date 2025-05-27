@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme - 06
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Readme - 06
+  sections:
+  - heading: Animation Clip
+    text: You can animate any serialized field within an Animation Clip. A common
+      use of this is animating the sprite associated with an object. The clip provides
+      information about values and timing on specific frames, known as key frames.
+      When working with values such as floats, you can also determine the curve used
+      to interpolate between values on non-key frames.
+    linkText: Animation Clips
+    url: https://docs.unity3d.com/Manual/AnimationClips.html
+  - heading: 'Animator '
+    text: An animator is a sort of controller for an object that can help manage
+      a number of animation clips within a state machine. Each node in the graph
+      is associated with an animation, and can be connected to other nodes with transitions.
+      Transitions can be given conditions using parameters that belong to the animator.
+      These parameters can be manipulated through code to indicate the desired state
+      to the animator.
+    linkText: Animator Controller
+    url: https://docs.unity3d.com/Manual/class-AnimatorController.html
+  - heading: StateMachineBehaviours
+    text: StateMachineBehaviours can be used to execute code during certain points
+      within a node's lifecycle. This can be useful to trigger conditions at appropriate
+      times, such as indicating the start or end of a particular state, or even manipulating
+      the gameobject or other components.
+    linkText: State Machine Behaviour Reference
+    url: https://docs.unity3d.com/Manual/StateMachineBehaviours.html
+  loadedLayout: 0
