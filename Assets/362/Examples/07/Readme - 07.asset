@@ -13,6 +13,56 @@ MonoBehaviour:
   m_Name: Readme - 07
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  title: 
-  sections: []
+  title: Readme - 07
+  sections:
+  - heading: Randomness
+    text: Unity provides a number of functions that enable access to pseudorandom
+      values (not truly random - most RNG performed by computers is pseudorandom).
+      With pseudorandom generation, using the same starting point in the sequence
+      (ie using a seed) will result in always obtaining the same sequence of results.
+      This can be used to simplify a level into one (or more) seeds, and generating
+      the level upon loading. The Unity Random library allows you to request random
+      values in a number of formats.
+    linkText: Using Randomness
+    url: https://docs.unity3d.com/6000.0/Documentation/Manual/class-random.html
+  - heading: Noise
+    text: Noise is a very versatile form of randomness, where there are values between
+      0 and 1 (or any given maximum/minimum) that smoothly oscillate over a (1,2,3+)
+      dimensional space. This has many applications, from graphical to generating
+      realistic terrain. There are many types of noise out there, but Unity's Mathf
+      library makes a PerlinNoise implementation available. Note that this implementation
+      always produces the same noise, so if you want randomization you have to randomize
+      the window that is being sampled
+    linkText: Mathf.PerlinNoise reference
+    url: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.PerlinNoise.html
+  - heading: Procedural Generation
+    text: Procedural generation refers to the use of an algorithm to create content.
+      Applied to video games, this most often means levels, but we have already seen
+      examples within class, where we randomly spawn enemies around a player. There
+      can be multiple layers to this process - such as simulating plate tectonics
+      and erosion, so one of the challenges as a developer is identifying how much
+      is "enough" in terms of creating a satisfying gameplay experience for the project.
+    linkText: Procedural Generation - An Overview
+    url: https://kentpawson123.medium.com/procedural-generation-an-overview-1b054a0f8d41
+  - heading: 
+    text: 
+    linkText: How to Effectively use Procedural Generation in Games
+    url: https://www.gamedeveloper.com/design/how-to-effectively-use-procedural-generation-in-games
+  - heading: 
+    text: 
+    linkText: A (complex) introduction to Procedural Content Generation
+    url: https://www.smashingmagazine.com/2016/03/procedural-content-generation-introduction/
+  - heading: Particle System
+    text: The particle system is a powerful and highly controllable tool that generates
+      2d images to represent things such as liquids, fires, smoke, or dust. It is
+      used in this scene to represent a sort of afterburner on the player, visually
+      indicating movement direction and speed.
+    linkText: Particle System Modules Reference
+    url: https://docs.unity3d.com/6000.0/Documentation/Manual/ParticleSystemModules.html
+  - heading: Trail Renderer
+    text: The trail renderer is another visual tool that can be used to trace the
+      path made by a GameObject's motion. You can get a wide variety of effects by
+      altering the textures and settings used.
+    linkText: Trail Renderer Reference
+    url: https://docs.unity3d.com/6000.0/Documentation/Manual/class-TrailRenderer.html
   loadedLayout: 0

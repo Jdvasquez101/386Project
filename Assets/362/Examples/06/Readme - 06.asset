@@ -39,4 +39,12 @@ MonoBehaviour:
       the gameobject or other components.
     linkText: State Machine Behaviour Reference
     url: https://docs.unity3d.com/Manual/StateMachineBehaviours.html
+  - heading: Sprite Import Settings
+    text: When importing sprites, there are a few key settings that make a difference.
+      One is the Pixels Per Unit value, which tells Unity how large the sprites should
+      appear in worldspace. Another is Sprite Mode (single vs multiple) and the Sprite
+      Editor, which is particularly relevant if you have multiple sprites being provided
+      from a single image file (such as an animation)
+    linkText: Sprite Texture Import Settings Reference
+    url: https://docs.unity3d.com/6000.0/Documentation/Manual/texture-type-sprite.html
   loadedLayout: 0
