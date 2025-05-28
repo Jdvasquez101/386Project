@@ -53,6 +53,11 @@ MonoBehaviour:
       3d motion.
     linkText: Character Controller Reference
     url: https://docs.unity3d.com/560/Documentation/Manual/class-CharacterController.html
+  - heading: 
+    text: 
+    linkText: 'How to Move Characters in Unity 3D: Built-In Character Controller
+      Explained'
+    url: https://youtu.be/UUJMGQTT5ts
   - heading: Materials
     text: When creating 3d objects, generating and/or applying an appropriate material
       is necessary. If you create a material, you will see a number of options for

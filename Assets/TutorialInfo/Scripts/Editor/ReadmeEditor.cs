@@ -129,7 +129,7 @@ public class ReadmeEditor : Editor
     var readme = (Readme)target;
     Init();
 
-    if(readme.sections.Length == 0)
+    if(!readme || readme.sections.Length == 0)
     {
       GUILayout.Label("This Readme asset is empty. Please\n" +
       "add some sections to the Readme\nasset using the Debug Inspector.");

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme - 08
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Readme - 08
+  sections:
+  - heading: 
+    text: If you choose to follow any of these tutorials, I encourage you to:<br>1.
+      Think about what is being done and why, potentially choosing to use a different
+      approach (i.e. using the new Input System) - Especially when the Tutorial might
+      be a little dated, using older approaches<br>2. Reading comments to find common
+      issues and solutions. Any one of these topics can be explored in far greater
+      detail, the goal here is to give you a decent starting point that both allows
+      you to start working without a massive time investment, and equip you to consider
+      what you may be looking for within a more involved or complicated approach
+      and/or tutorial.
+    linkText: 
+    url: 
+  - heading: Platformers
+    text: Platformers primarily focus on player movement, which may include getting
+      to a goal while navigating enemies and environmental hazards
+    linkText: ULTIMATE 2D Platformer Controller for Unity
+    url: https://youtu.be/zHSWG05byEc
+  - heading: 
+    text: 
+    linkText: 'ULTIMATE 2D Platformer Controller for Unity (Part 2) '
+    url: https://youtu.be/j1HN7wsFHcY
+  - heading: 
+    text: 
+    linkText: Physics Based 3d Controller
+    url: https://youtu.be/qdskE8PJy6Q
+  - heading: 2d Top Down
+    text: We have already looked at movement, but there are other features you may
+      wish to implement within a 2d game
+    linkText: Aim at Mouse in Unity 2D
+    url: https://youtu.be/fuGQFdhSPg4?list=PLzDRvYVwl53tqzN5R-j33Sd7kf_f6b6z4
+  - heading: 
+    text: 
+    linkText: Field of View Effect in Unity (Line of Sight, View Cone)
+    url: https://youtu.be/CSeUMTaNFYk
+  - heading: 
+    text: 
+    linkText: Enemy Line of Sight, Stealth Game in Unity (Field of View)
+    url: https://youtu.be/3-jPo2wzvdw
+  - heading: RPG Combat
+    text: Some games make use of turn based RPG combat, which is demonstrated below.
+    linkText: 'Simple Turn-Based RPG Battle System (Unity Tutorial) '
+    url: https://youtu.be/0QU0yV0CYT4
+  - heading: FPS Games
+    text: This playlist covers basics as well as some advanced motion concepts.
+    linkText: FIRST PERSON MOVEMENT in 10 MINUTES
+    url: https://youtu.be/f473C43s8nE?list=PLPtlo7_KxIjCIKa_PgtRjOgjWLSPRMLwO
+  - heading: 
+    text: 
+    linkText: Shooting with Raycasts
+    url: https://youtu.be/THnivyG0Mvo?list=PLPV2KyIb3jR7dFbE2UQYu7QWMdUgDnlnk
+  - heading: 
+    text: 
+    linkText: MAKING YOUR FIRST FPS in Unity with FPS Microgame!
+    url: https://youtu.be/jE3ZJ_tCGTo?list=PLPV2KyIb3jR7dFbE2UQYu7QWMdUgDnlnk
+  - heading: 
+    text: 
+    linkText: (Third Person Shooter) Accurate Aiming Options Discussed & Implemented
+    url: https://youtu.be/x8ECpNWMmag
+  - heading: Dialogue System
+    text: Some games use dialogue boxes to establish narrative and context, or provide
+      instructions to the player.
+    linkText: '5 Minute DIALOGUE SYSTEM in UNITY Tutorial '
+    url: https://www.youtube.com/watch?v=8oTYabhj248
+  - heading: 
+    text: 
+    linkText: 'How to make the Perfect Dialogue System '
+    url: https://youtu.be/1198z5dDc8g
+  - heading: Inventory
+    text: If a game has some sort of items or resources available, the need for an
+      Inventory system is felt pretty swiftly. There are a number of ways to represent
+      items and inventories, from both the player's and developer's perspective.
+    linkText: ' The 3 ways to make inventory items in Unity'
+    url: https://youtu.be/pmBv0Cagx_o
+  loadedLayout: 0
