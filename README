@@ -5,7 +5,9 @@ In order to open this within unity, please:
 1. Clone this repository using git
    a. While you may find downloading a zip more convenient, using git clone will enable you to pull any future updates, and will be necessary for
 a suitable workflow within your Unity projects where you are required to use git. It is very easy to make unintended changes in Unity, and it is
-helpful to be able to detect and revert changes.</li><ol>
+helpful to be able to detect and revert changes.
+
 2. In Unity Hub, select "Add" -> "Add Project From Disk" and navigate to the location of this directory, select OK
+
 3. Download the correct version of Unity when prompted (a Long Term Support version, 56f1).
    a. You may use a newer version if you wish, but you will be responsible for any bugs, errors, or future version changes if you go that route.
