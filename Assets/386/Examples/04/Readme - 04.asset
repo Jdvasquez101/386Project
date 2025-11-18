@@ -66,7 +66,7 @@ MonoBehaviour:
       shiny, or lit, or apply various distortions to the provided textures. You may
       wish to create and apply your own texture to the 3d scene in this example.
     linkText: Materials, Shaders, and Textures
-    url: https://docs.unity3d.com/560/Documentation/Manual/Shaders.html
+    url: https://docs.unity3d.com/Manual/writing-custom-shaders.html
   - heading: Shaders
     text: These are shaders, which are low level scripts and allow for a great level
       of customization if you are willing to delve into their implementation - which

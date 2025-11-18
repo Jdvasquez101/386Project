@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "362Project.sln"
+    "dotnet.defaultSolution": "386Project.slnx"
 }

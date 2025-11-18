@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -90,6 +91,15 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "43dc66f0-525a-4428-a5e1-1b73b231f5bf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Emote",
+                    "type": "Button",
+                    "id": "f237b0d4-0f60-44a3-81bd-c100fe132331",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -501,6 +511,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a853200c-ee6a-4287-9c1b-6f9ab7773a69",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

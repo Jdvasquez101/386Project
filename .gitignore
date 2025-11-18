@@ -10,6 +10,7 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 /[Aa]ssets/[Ss]amples/
+/[Aa]ssets/[Tt]emp/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -61,6 +62,7 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+*.zip
 
 # Crashlytics generated file
 crashlytics-build.properties

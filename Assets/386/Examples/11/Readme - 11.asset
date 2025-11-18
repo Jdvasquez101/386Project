@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme - 11
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Readme - 12
+  sections:
+  - heading: Coding Shaders
+    text: 'Unity allows developers to write custom shaders using a combination of
+      ShaderLab and HLSL. HLSL is more generally used within DirectX applications,
+      and ShaderLab is a markdown-like language that organizes and coordinates HLSL
+      shaders. HLSL is a standardized format, is well suited to version control and '
+    linkText: Writing Custom Shaders
+    url: https://docs.unity3d.com/Manual/writing-custom-shaders.html
+  - heading: Shader Graph
+    text: Unity has created a node-based graph system to simplify the process of
+      creating shaders. It is also possible to create custom nodes using your own
+      HLSL code, though a substantial amount of common functionality is provided
+      by default. It is great for prototyping, but may have issues with certain functionality,
+      as it gets more complex, and being maintained. It is also not provided in a
+      universal format, meaning any code created will not be transferrable to projects
+      in other platforms.
+    linkText: Shader Graph Reference
+    url: https://docs.unity3d.com/Packages/com.unity.shadergraph@17.3/manual/index.html
+  - heading: VFX Graph
+    text: '"The Visual Effect Graph is a package that you can use to create large-scale
+      visual effects for your Unity Project. The Visual Effect Graph simulates particle
+      behavior on the GPU, which allows it to simulate many more particles than the
+      Built-in Particle System . If you want to create visual effects that include
+      a large number of particles and need highly customisable behavior, use the
+      Visual Effect Graph instead of the Built-in Particle System."'
+    linkText: Visual Effect Graph Reference
+    url: https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.3/manual/index.html
+  loadedLayout: 0

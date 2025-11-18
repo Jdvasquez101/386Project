@@ -48,7 +48,7 @@ namespace HelloWorld
         {   
             //If the local emote has not disappeared, do not spawn a new one
             //Discourages bad actors from spamming emotes
-            if(!spawnedEmote)
+            //if(!spawnedEmote)
             {
                 spawnedEmote = Instantiate(emotePrefab, transform.position, Quaternion.identity);
             }
@@ -85,6 +85,15 @@ namespace HelloWorld
         public void OnFire()
         {
             Debug.Log("fire");
+            Debug.Log("Emote");
+            if(IsOwner)
+            {
+                //Only send the spawning call to everyone if the old emote has not yet finished
+                if(!spawnedEmote)
+                {
+                    SubmitEmoteActionEveryoneRpc(transform.position);
+                }
+            }
         }
 
         public void OnEmote()
@@ -93,7 +102,7 @@ namespace HelloWorld
             if(IsOwner)
             {
                 //Only send the spawning call to everyone if the old emote has not yet finished
-                if(!spawnedEmote)
+                //if(!spawnedEmote)
                 {
                     SubmitEmoteActionEveryoneRpc(transform.position);
                 }
