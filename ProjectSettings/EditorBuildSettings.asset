@@ -27,7 +27,16 @@ EditorBuildSettings:
     path: Assets/362/Examples/05/05.unity
     guid: fa0b4ab35f3236e498cd3e44263170ad
   - enabled: 1
+    path: Assets/362/Examples/06/06.unity
+    guid: f699606377d898e48a66684e1c4a422c
+  - enabled: 1
+    path: Assets/362/Examples/07/07.unity
+    guid: 14e7a2bf4b8507246ad4171f9ad63440
+  - enabled: 1
     path: Assets/362/Examples/12/12.unity
+    guid: 60dfd62c0d42ca548b6b4c0b7a8b1699
+  - enabled: 1
+    path: Assets/362/Examples/13/13.unity
     guid: 60dfd62c0d42ca548b6b4c0b7a8b1699
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

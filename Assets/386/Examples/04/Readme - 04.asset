@@ -84,4 +84,10 @@ MonoBehaviour:
       collidable and/or visible objects that don't cast shadows.
     linkText: Introduction to Lighting
     url: https://docs.unity3d.com/Manual/LightingInUnity.html
+  - heading: Connecting Scenes
+    text: We have connected all scenes up through lesson 05. Can you add in a way
+      to select scenes 06 and 07? They have already been added to the build order
+      Scene List.
+    linkText: Introduction to Lighting
+    url: https://docs.unity3d.com/Manual/LightingInUnity.html
   loadedLayout: 0

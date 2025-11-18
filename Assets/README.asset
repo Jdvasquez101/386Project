@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: 
+  sections:
+  - heading: Welcome!
+    text: 
+    linkText: 
+    url: 
+  - heading: 362
+    text: Example scenes and assets can be found in the 362 folder.
+    linkText: 
+    url: 
+  - heading: Settings
+    text: Various files that are used to configure build settings, the InputSystem,
+      and the UniversalRenderingPipeline (URP)
+    linkText: 
+    url: 
+  - heading: TutorialInfo
+    text: Contains the files necessary to create and display readmes like this.
+    linkText: 
+    url: 
+  - heading: TextMesh Pro
+    text: When using TextMesh Pro objects, certain files need to be included in your
+      assets folder. Unity prompts you to download them if you use TMP objects when
+      it is not installed. You will be met with a popup prompting you to "Import
+      TMP Essentials" when you first add or change a TextMesh Pro based object.
+    linkText: 
+    url: 
+  loadedLayout: 0

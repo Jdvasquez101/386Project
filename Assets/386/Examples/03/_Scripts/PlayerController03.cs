@@ -14,7 +14,7 @@ public class PlayerController03 : MonoBehaviour
   void Start()
   {
     _curHealth = _totalHealth;
-    //Finding objects by type is more effective than using FindObjectOfType, but this is being called once total
+    //Finding objects by tag is more effective than using FindObjectOfType, but this is being called once total
     _enemyManager = FindFirstObjectByType<EnemyManager>();
     if (!_enemyManager)
     {

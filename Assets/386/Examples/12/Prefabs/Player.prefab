@@ -57,6 +57,9 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -201,7 +204,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: afab76b2-7652-44a0-b7e7-72ab57e7b646
-    m_ActionName: 'Player/Look[/Mouse/delta]'
+    m_ActionName: ''Player/Look[/Mouse/delta]''
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2540275267170982511}
