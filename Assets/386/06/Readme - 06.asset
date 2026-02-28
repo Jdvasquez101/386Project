@@ -47,4 +47,23 @@ MonoBehaviour:
       from a single image file (such as an animation)
     linkText: Sprite Texture Import Settings Reference
     url: https://docs.unity3d.com/6000.0/Documentation/Manual/texture-type-sprite.html
+  - heading: Humanoid Animations
+    text: 3D Characters are often animated by transforming bones that are arranged
+      in a hierarchy, with the root being the hips and radiating out to the the leaf
+      nodes representing extremities. Each bone's transform represents its rotation
+      relative to its "anchor". This means that if you rotate, for example, a shoulder,
+      the entire arm attached to it will rotate. This is factored into the animation's
+      data.
+    linkText: 
+    url: 
+  - heading: Mixamo
+    text: A free service offered by Adobe, there are numerous character models rigged
+      for animation, as well as numerous animations. Animations give specific commands
+      to specific bones, so unless two skeletons have the same naming structure,
+      animations for one won't apply to the other. Unity has a way to uniformly apply
+      humanoid style animations to humanoid shaped animation rigs. Please refer to
+      the Canvas Page detailing the import process, particularly if you want to apply
+      animations to multiple models.
+    linkText: Mixamo
+    url: https://www.mixamo.com/
   loadedLayout: 0

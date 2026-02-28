@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/386/05/05.unity
     guid: fa0b4ab35f3236e498cd3e44263170ad
   - enabled: 1
-    path: Assets/386/06/06.unity
+    path: Assets/386/06/Scenes/06 - Sprite.unity
     guid: f699606377d898e48a66684e1c4a422c
   - enabled: 1
     path: Assets/386/07/07.unity
@@ -35,6 +35,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/386/12/12.unity
     guid: 60dfd62c0d42ca548b6b4c0b7a8b1699
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
